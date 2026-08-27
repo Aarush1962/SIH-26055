@@ -1,0 +1,14 @@
+{
+    "freq_min_mhz": 0,
+    "freq_max_mhz": 18000,
+    "freq_bin_mhz": 500,
+    "time_bin_s": 0.05,
+    "n_freq_bins": 36,
+    "hidden_size": 128,
+    "learning_rate": 0.001,
+    "epochs": 20,
+    "tbptt_length": 32,
+    "initial_belief": "P_baseline",
+    "training_scan_policy": "uniform_random",
+    "loss": "BCEWithLogitsLoss"
+}
