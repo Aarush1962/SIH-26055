@@ -1,0 +1,112 @@
+{
+  "prototype": {
+    "description": "Frozen end-to-end EW scheduler prototype",
+    "test_directory": "test_data",
+    "recursive_model": "train_final\\recursive_belief_updater.pt",
+    "bandit_model": "train_final\\neural_oracle_bandit.pt",
+    "rf_conversion": {
+      "freq_min_mhz": 0,
+      "freq_max_mhz": 18000,
+      "freq_bin_mhz": 500,
+      "time_bin_s": 0.05,
+      "n_freq_bins": 36
+    },
+    "oracle": "computed independently in memory",
+    "intermediate_files_saved": false
+  },
+  "aggregate_metrics": {
+    "test_files": 1,
+    "total_time_steps": 589,
+    "total_duration_s": 29.450000000000003,
+    "total_events": 24,
+    "random_intercepted": 8,
+    "random_micro_isr": 0.3333333333333333,
+    "random_mean_delay_s": 1.34375,
+    "greedy_intercepted": 4,
+    "greedy_micro_isr": 0.16666666666666666,
+    "greedy_mean_delay_s": 0.0,
+    "neural_intercepted": 10,
+    "neural_micro_isr": 0.4166666666666667,
+    "neural_mean_delay_s": 0.8,
+    "oracle_intercepted": 24,
+    "oracle_micro_isr": 1.0,
+    "oracle_mean_delay_s": 0.006250000000000001,
+    "neural_vs_random_relative_gain": 0.2500000000000002,
+    "neural_vs_oracle_capture": 0.4166666666666667,
+    "neural_event_gap_to_oracle": 14,
+    "mean_neural_unique_bands_scanned": 36.0,
+    "mean_neural_scan_hit_rate": 0.02207130752503872
+  },
+  "per_file_metrics": [
+    {
+      "file": "config_0.h5",
+      "time_steps": 589,
+      "duration_s": 29.450000000000003,
+      "active_cells": 453,
+      "total_events": 24,
+      "random_intercepted": 8,
+      "random_isr": 0.3333333333333333,
+      "random_mean_delay_s": 1.34375,
+      "random_unique_bands": 2,
+      "greedy_intercepted": 4,
+      "greedy_isr": 0.16666666666666666,
+      "greedy_mean_delay_s": 0.0,
+      "greedy_unique_bands": 1,
+      "neural_intercepted": 10,
+      "neural_isr": 0.4166666666666667,
+      "neural_mean_delay_s": 0.8,
+      "neural_median_delay_s": 0.8250000000000001,
+      "neural_max_delay_s": 1.75,
+      "neural_unique_bands_hit": 2,
+      "neural_unique_bands_scanned": 36,
+      "neural_scan_hit_rate": 0.02207130752503872,
+      "oracle_intercepted": 24,
+      "oracle_isr": 1.0,
+      "oracle_mean_delay_s": 0.006250000000000001,
+      "oracle_schedule_scans": 24,
+      "neural_vs_oracle_capture": 0.4166666666666667,
+      "neural_common_events_with_oracle": 10,
+      "neural_common_delay_s": 0.8,
+      "oracle_delay_on_neural_common_s": 0.005,
+      "neural_common_excess_delay_s": 0.795,
+      "random_vs_oracle_capture": 0.3333333333333333,
+      "greedy_vs_oracle_capture": 0.16666666666666666,
+      "random_common_excess_delay_s": 1.3375,
+      "greedy_common_excess_delay_s": 0.0
+    }
+  ],
+  "duration_summary": [
+    {
+      "duration_group": "5+ steps",
+      "events": 14,
+      "neural_intercepted": 10,
+      "oracle_intercepted": 14,
+      "neural_isr": 0.7142857142857143,
+      "oracle_isr": 1.0
+    },
+    {
+      "duration_group": "3-4 steps",
+      "events": 5,
+      "neural_intercepted": 0,
+      "oracle_intercepted": 5,
+      "neural_isr": 0.0,
+      "oracle_isr": 1.0
+    },
+    {
+      "duration_group": "2 steps",
+      "events": 4,
+      "neural_intercepted": 0,
+      "oracle_intercepted": 4,
+      "neural_isr": 0.0,
+      "oracle_isr": 1.0
+    },
+    {
+      "duration_group": "1 step",
+      "events": 1,
+      "neural_intercepted": 0,
+      "oracle_intercepted": 1,
+      "neural_isr": 0.0,
+      "oracle_isr": 1.0
+    }
+  ]
+}
