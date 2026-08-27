@@ -1,0 +1,46 @@
+{
+  "config_0.npy": {
+    "total_events": 220,
+    "intercepted_events": 208,
+    "missed_events": 12,
+    "raw_event_interception_rate": 0.9454545454545454,
+    "mean_intercept_delay_s": 0.03605769230769231,
+    "median_intercept_delay_s": 0.0,
+    "max_intercept_delay_s": 0.8500000000000001,
+    "unique_bands_found": 10,
+    "total_delay_s": 7.5
+  },
+  "config_1.npy": {
+    "total_events": 544,
+    "intercepted_events": 489,
+    "missed_events": 55,
+    "raw_event_interception_rate": 0.8988970588235294,
+    "mean_intercept_delay_s": 0.033231083844580775,
+    "median_intercept_delay_s": 0.0,
+    "max_intercept_delay_s": 0.7000000000000001,
+    "unique_bands_found": 18,
+    "total_delay_s": 16.25
+  },
+  "config_10.npy": {
+    "total_events": 367,
+    "intercepted_events": 312,
+    "missed_events": 55,
+    "raw_event_interception_rate": 0.8501362397820164,
+    "mean_intercept_delay_s": 0.02532051282051282,
+    "median_intercept_delay_s": 0.0,
+    "max_intercept_delay_s": 0.75,
+    "unique_bands_found": 16,
+    "total_delay_s": 7.9
+  },
+  "config_100.npy": {
+    "total_events": 393,
+    "intercepted_events": 342,
+    "missed_events": 51,
+    "raw_event_interception_rate": 0.8702290076335878,
+    "mean_intercept_delay_s": 0.036549707602339186,
+    "median_intercept_delay_s": 0.0,
+    "max_intercept_delay_s": 1.1,
+    "unique_bands_found": 14,
+    "total_delay_s": 12.5
+  }
+}
