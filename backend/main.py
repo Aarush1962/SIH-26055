@@ -8,6 +8,7 @@ import numpy as np
 import torch
 from torch import nn
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -37,6 +38,14 @@ FREQ_CENTRES = (np.arange(N_BANDS) * FREQ_BIN_MHZ + FREQ_BIN_MHZ / 2).astype(flo
 DEVICE = torch.device("cpu")
 
 app = FastAPI(title="Smart Scan Strategy API", version="1.0.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 class BeliefUpdater(nn.Module):
